@@ -9,6 +9,16 @@ Tools for building PNG/MPEG-TS polyglot files (in this case, files that are simu
 
 So a polyglot is built by concatenating a valid, trimmed PNG with a valid TS file: `[PNG bytes][TS bytes]`.
 
+## TUI
+
+`tui.py` is a terminal UI (built on the stdlib `curses` module, no extra dependencies) that wraps all three scripts below — pick a tool from the menu, fill in the form, and run it with live output.
+
+```
+python3 tui.py
+```
+
+Navigation: `Up`/`Down` to move, `Enter` to edit a field / toggle a checkbox / run, `Esc` or `q` to go back.
+
 ## Scripts
 
 ### `png_ts_polyglot.py`
